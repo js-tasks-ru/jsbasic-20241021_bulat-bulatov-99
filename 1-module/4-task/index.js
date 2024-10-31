@@ -1,8 +1,6 @@
 function checkSpam(str) {
   const lowerText = str.toLowerCase();
-  if(lowerText.includes('x')) {
-    return true
-  } else if(lowerText.includes('xxx')) {
+  if(lowerText.includes('x' || 'xxx')) {
     return true
   } else {
     return false
